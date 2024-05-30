@@ -31,6 +31,7 @@ return {
             lspconfig.eslint.setup({})
             lspconfig.dartls.setup({})
             lspconfig.ocamllsp.setup({})
+            lspconfig.jdtls.setup({})
             lspconfig.lua_ls.setup({
                 settings = {
                     Lua = {
