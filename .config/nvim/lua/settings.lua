@@ -8,14 +8,7 @@ vim.opt.relativenumber = true
 
 -- use 2 space indent
 vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
--- automatically indent
-vim.opt.smartindent = true
-
--- don't wrap text on long lines
-vim.opt.wrap = false
 
 -- make search case insensitive
 vim.opt.ignorecase = true
