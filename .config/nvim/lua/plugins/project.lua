@@ -1,17 +1,5 @@
 return {
     {
-        'stevearc/oil.nvim',
-        dependencies = {
-            'nvim-tree/nvim-web-devicons'
-        },
-        config = function()
-            require("oil").setup({
-                vim.keymap.set("n", "<leader>pv", vim.cmd.Oil)
-            })
-        end
-    },
-
-    {
         'nvim-telescope/telescope.nvim',
         dependencies = {
             'nvim-lua/plenary.nvim',
