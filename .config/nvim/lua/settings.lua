@@ -10,6 +10,12 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 
+-- use spaces instead of tabs
+vim.opt.expandtab = true
+
+-- do not wrap long lines
+vim.opt.wrap = false;
+
 -- make search case insensitive
 vim.opt.ignorecase = true
 -- make search case sensitive if it contains upper case characters
