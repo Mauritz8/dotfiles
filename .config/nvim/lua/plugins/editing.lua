@@ -23,4 +23,11 @@ return {
             })
         end
     },
+
+    {
+      dir = '/home/mauritz/code/gitstatus.nvim',
+      config = function()
+        vim.keymap.set('n', '<leader>gs', vim.cmd.Gitstatus)
+      end
+    },
 }
