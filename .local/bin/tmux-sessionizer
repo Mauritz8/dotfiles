@@ -10,7 +10,7 @@ if [[ -z $path ]]; then
   exit 0
 fi
 
-name=$(basename $path)
+name=$(basename $path | tr . _)
 if [[ -z $TMUX ]]; then
   tmux new-session -A -s $name -c $path
 else
