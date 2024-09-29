@@ -21,7 +21,7 @@ return {
         config = function()
             local lspconfig = require("lspconfig")
             lspconfig.clangd.setup({})
-            lspconfig.tsserver.setup({})
+            lspconfig.ts_ls.setup({})
             lspconfig.gopls.setup({})
             lspconfig.rust_analyzer.setup({})
             lspconfig.pyright.setup({})
@@ -32,6 +32,9 @@ return {
             lspconfig.dartls.setup({})
             lspconfig.ocamllsp.setup({})
             lspconfig.jdtls.setup({})
+            lspconfig.svelte.setup({})
+            lspconfig.tailwindcss.setup({})
+            lspconfig.csharp_ls.setup({})
             lspconfig.lua_ls.setup({
                 settings = {
                     Lua = {
