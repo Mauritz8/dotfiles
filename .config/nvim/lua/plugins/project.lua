@@ -5,6 +5,11 @@ return {
             'nvim-lua/plenary.nvim',
         },
         config = function()
+            require('telescope').setup({
+              defaults = {
+                path_display = { "truncate" },
+              },
+            })
             local builtin = require('telescope.builtin')
 
             -- find file in project
