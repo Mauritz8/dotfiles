@@ -1,8 +1,8 @@
 return {
     {
-      'rebelot/kanagawa.nvim',
+      'ferdinandrau/lavish.nvim',
         config = function()
-            vim.cmd.colorscheme("kanagawa-dragon")
+            vim.cmd.colorscheme('lavish-dark')
         end
     },
 
