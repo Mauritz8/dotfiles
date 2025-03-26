@@ -1,12 +1,5 @@
 return {
     {
-      'ferdinandrau/lavish.nvim',
-        config = function()
-            vim.cmd.colorscheme('lavish-dark')
-        end
-    },
-
-    {
         'mbbill/undotree',
         config = function()
             vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)

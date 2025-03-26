@@ -18,9 +18,4 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 -- remap escape key to jk
 vim.keymap.set("i", "jk", "<Esc>")
 
--- move between options in a quickfix list
--- for example to go through references
-vim.keymap.set("n", "<C-j>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-k>", "<cmd>cprev<CR>zz")
-
 vim.keymap.set("n", "<C-y>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
