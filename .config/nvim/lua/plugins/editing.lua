@@ -1,5 +1,12 @@
 return {
     {
+      'vague2k/vague.nvim',
+      config = function()
+        vim.cmd.colorscheme('vague')
+      end
+    },
+
+    {
         'mbbill/undotree',
         config = function()
             vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
@@ -16,5 +23,16 @@ return {
             })
         end
     },
+
     { 'nvim-tree/nvim-web-devicons' },
+
+    {
+      'Saghen/blink.cmp',
+      version = '1.*',
+      opts = {
+        sources = {
+          default = { 'lsp', 'path', 'snippets', 'buffer' },
+        },
+      },
+    }
 }
