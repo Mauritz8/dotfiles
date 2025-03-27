@@ -1,3 +1,9 @@
+-- set leader key to space
+vim.g.mapleader = " "
+
+-- remap escape key to jk
+vim.keymap.set("i", "jk", "<Esc>")
+
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- move selected lines up/down
@@ -14,8 +20,5 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- copy to system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
-
--- remap escape key to jk
-vim.keymap.set("i", "jk", "<Esc>")
 
 vim.keymap.set("n", "<C-y>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")

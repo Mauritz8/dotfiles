@@ -1,8 +1,5 @@
--- set leader key to space
-vim.g.mapleader = " "
-
 -- show line numbers
-vim.opt.nu = true
+vim.opt.number = true
 -- use relative line numbers
 vim.opt.relativenumber = true
 
