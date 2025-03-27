@@ -1,8 +1,8 @@
 return {
   {
-    'vague2k/vague.nvim',
+    'projekt0n/github-nvim-theme',
     config = function()
-      vim.cmd.colorscheme('vague')
+      vim.cmd.colorscheme('github_dark_default')
     end
   },
 
