@@ -1,5 +1,9 @@
 vim.diagnostic.config({ virtual_text = true })
 
+vim.lsp.config('*', {
+  root_markers = { '.git' },
+})
+
 vim.lsp.config.clangd = {
   cmd = { 'clangd', '--background-index' },
   filetypes = { 'c', 'cpp' },
@@ -35,3 +39,21 @@ vim.lsp.config.pyright = {
   filetypes = { 'python' },
 }
 vim.lsp.enable('pyright')
+
+vim.lsp.config.rust_analyzer = {
+  cmd = { 'rust-analyzer' },
+  filetypes = { 'rust' },
+}
+vim.lsp.enable('rust_analyzer')
+
+vim.lsp.config.gopls = {
+  cmd = { 'gopls' },
+  filetypes = { 'go' },
+}
+vim.lsp.enable('gopls')
+
+vim.lsp.config.svelteserver = {
+  cmd = { 'svelteserver', '--stdio' },
+  filetypes = { 'svelte' },
+}
+vim.lsp.enable('svelteserver')
