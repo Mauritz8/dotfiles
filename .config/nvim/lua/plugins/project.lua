@@ -1,9 +1,6 @@
 return {
   {
     'nvim-telescope/telescope.nvim',
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-    },
     config = function()
       require('telescope').setup({
         defaults = {
@@ -24,7 +21,6 @@ return {
   {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
-    dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       local harpoon = require("harpoon")
       harpoon.setup()
@@ -37,5 +33,7 @@ return {
       vim.keymap.set("n", "<C-p>", function() harpoon:list():select(3) end)
       vim.keymap.set("n", "<C-n>", function() harpoon:list():select(4) end)
     end
-  }
+  },
+
+  { "nvim-lua/plenary.nvim", lazy = true },
 }

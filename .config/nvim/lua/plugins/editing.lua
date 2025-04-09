@@ -24,7 +24,7 @@ return {
     end
   },
 
-  { 'nvim-tree/nvim-web-devicons' },
+  { 'nvim-tree/nvim-web-devicons', lazy = true },
 
   {
     'Saghen/blink.cmp',
@@ -36,10 +36,5 @@ return {
     },
   },
 
-  {
-    'NMAC427/guess-indent.nvim',
-    config = function()
-      require('guess-indent').setup({})
-    end
-  },
+  { 'NMAC427/guess-indent.nvim', opts = {} },
 }
