@@ -11,7 +11,7 @@ vim.lsp.config.clangd = {
 vim.lsp.enable('clangd')
 
 vim.lsp.config.ts_ls = {
-  cmd = { 'typescript-language-server', '--stdio' }, 
+  cmd = { 'typescript-language-server', '--stdio' },
   filetypes = { 'javascript', 'typescript' },
 }
 vim.lsp.enable('ts_ls')
@@ -57,3 +57,10 @@ vim.lsp.config.svelteserver = {
   filetypes = { 'svelte' },
 }
 vim.lsp.enable('svelteserver')
+
+vim.lsp.config.luals = {
+  cmd = { 'lua-language-server' },
+  filetypes = { 'lua' },
+  settings = { Lua = { diagnostics = { globals = { 'vim' } } } },
+}
+vim.lsp.enable('luals')

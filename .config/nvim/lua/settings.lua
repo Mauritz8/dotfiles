@@ -30,3 +30,6 @@ vim.opt.colorcolumn = "80"
 
 -- store undo history even after quitting vim
 vim.opt.undofile = true
+
+-- use system clipboard
+vim.opt.clipboard = "unnamedplus"
