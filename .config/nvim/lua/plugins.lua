@@ -39,4 +39,61 @@ return {
   },
 
   { "nvim-lua/plenary.nvim", lazy = true },
+
+  {
+    'projekt0n/github-nvim-theme',
+    config = function()
+      vim.cmd.colorscheme('github_dark_default')
+    end
+  },
+
+  {
+    'mbbill/undotree',
+    config = function()
+      vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+    end
+  },
+
+  {
+    'nvim-treesitter/nvim-treesitter',
+    build = ':TSUpdate',
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        auto_install = true,
+        highlight = { enable = true }
+      })
+    end
+  },
+
+  { 'nvim-tree/nvim-web-devicons', lazy = true },
+
+  {
+    'Saghen/blink.cmp',
+    version = '1.*',
+    opts = {
+      sources = {
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
+      },
+    },
+  },
+
+  { 'NMAC427/guess-indent.nvim', opts = {} },
+
+  { 'neovim/nvim-lspconfig' },
+
+  { 'lewis6991/gitsigns.nvim', opts = {} },
+
+  {
+    'sindrets/diffview.nvim',
+    config = function()
+      vim.keymap.set('n', '<leader>g', vim.cmd.DiffviewOpen)
+    end
+  },
+
+  {
+    dir = '~/code/gitstatus.nvim/',
+    config = function()
+      vim.keymap.set('n', '<leader>s', vim.cmd.Gitstatus)
+    end
+  },
 }
