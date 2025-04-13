@@ -37,4 +37,6 @@ return {
   },
 
   { 'NMAC427/guess-indent.nvim', opts = {} },
+
+  { 'neovim/nvim-lspconfig' }
 }
