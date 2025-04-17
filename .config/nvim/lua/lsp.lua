@@ -12,7 +12,7 @@ vim.lsp.enable('erlangls')
 vim.lsp.enable('pyright')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('gopls')
-vim.lsp.enable('svelteserver')
+vim.lsp.enable('svelte')
 
 vim.lsp.config.lua_ls = {
   settings = {
