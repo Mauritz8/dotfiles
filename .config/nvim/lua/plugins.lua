@@ -112,4 +112,10 @@ return {
       vim.keymap.set('n', '<leader>s', vim.cmd.Gitstatus)
     end
   },
+
+  {
+    'nvim-flutter/flutter-tools.nvim',
+    lazy = false,
+    opts = {},
+  }
 }
