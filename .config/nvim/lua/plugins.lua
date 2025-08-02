@@ -18,6 +18,13 @@ return {
       vim.keymap.set({'n', 'v'}, '<leader>*', builtin.grep_string, {
         desc = "search word under cursor",
       })
+      vim.keymap.set("n", "grr", builtin.lsp_references)
+      vim.keymap.set("n", "<leader>pd", builtin.diagnostics, {
+        desc = "list diagnostics for all open buffers",
+      })
+      vim.keymap.set("n", "<leader>h", builtin.help_tags, {
+        desc = "search help",
+      })
     end
   },
 
