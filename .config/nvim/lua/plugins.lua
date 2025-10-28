@@ -22,7 +22,7 @@ return {
       vim.keymap.set("n", "<leader>pd", builtin.diagnostics, {
         desc = "list diagnostics for all open buffers",
       })
-      vim.keymap.set("n", "<leader>h", builtin.help_tags, {
+      vim.keymap.set("n", "<leader>hh", builtin.help_tags, {
         desc = "search help",
       })
     end
