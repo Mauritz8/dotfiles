@@ -2,4 +2,14 @@
 
 cp -rsv -t $HOME/ $(pwd)/.config $(pwd)/.local
 chmod +x .local/bin/tmux-sessionizer
-echo "bind -x '\"\C-y\":\"tmux-sessionizer\"'" >> ~/.bashrc
+
+cat >> ~/.bashrc << 'EOF'
+bind -x '"\C-y":"tmux-sessionizer"'
+
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gl='git log'
+alias gb='git branch'
+alias gd='git diff'
+EOF
