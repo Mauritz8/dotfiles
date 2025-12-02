@@ -6,6 +6,8 @@ chmod +x .local/bin/tmux-sessionizer
 cat >> ~/.bashrc << 'EOF'
 bind -x '"\C-y":"tmux-sessionizer"'
 
+export EDITOR=nvim
+
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
