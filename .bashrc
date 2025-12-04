@@ -19,4 +19,4 @@ alias gd='git diff'
 export EDITOR=nvim
 export PATH="$PATH:$HOME/.local/bin"
 
-bind -x '"\C-y":"tmux-sessionizer"'
+bind -x '"\C-y":"open-project"'
