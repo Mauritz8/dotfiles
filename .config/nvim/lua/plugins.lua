@@ -137,7 +137,12 @@ return {
   },
 
   {
-    dir = '~/code/gitstatus.nvim/',
+    dir = '~/code/gitstatus.nvim',
+    dependencies = {
+      'nvim-tree/nvim-web-devicons', -- optional dependency to display filetype icons
+      -- 'nvim-mini/mini.icons' -- you can use mini.icons instead if you prefer
+      'rcarriga/nvim-notify',
+    },
     config = function()
       vim.keymap.set('n', '<leader>s', vim.cmd.Gitstatus)
     end
